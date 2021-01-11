@@ -18,7 +18,9 @@ func main() {
 	</body>
 	</html>`
 
+	//sampple.htmlファイルを作成
 	os.Create("sample.html")
 
+	//ファイルにhtmlを書き込む
 	ioutil.WriteFile("sample.html", []byte(tpl), os.ModePerm)
 }
